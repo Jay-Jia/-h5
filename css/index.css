@@ -1,0 +1,548 @@
+/*全局基准设置*/
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body{
+	font-size: 1rem;
+	width:100%;
+	
+	font-family:"Microsoft YaHei UI";
+}
+
+
+/*全局css*/
+.contain{
+    width: 80%;
+    margin: 10% auto;
+}
+@media screen and (min-width: 321px) and (max-width: 380px) {
+     .contain_img,.answer{
+        max-width: 24.5rem;
+    }
+    .contain{
+    width: 80%;
+    margin: 8% auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+     .contain_img,.answer{
+        max-width: 23rem;
+    }
+    .contain{
+    width: 80%;
+    margin: 8% auto;
+    }
+}
+.hide{ display:none;}
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align:center;
+}
+
+.page .wrap{
+	height:100%;
+}
+.footers{
+    width: 40%;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 20;
+}
+.footer{
+    width: 40%;
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    z-index: 20;
+}
+
+.padding-box-2{
+	padding-bottom: 78px;
+}
+.padding-box-1{
+	padding-bottom: 39px;
+}
+.next,.last{
+	width: 50%;
+    max-width: 110px;
+}
+.pos-rel{
+	position: relative;
+}
+.roll_on{
+	box-shadow: 2px 2px 20px yellow;
+    border-radius: 9px;
+    -webkit-box-shadow: 2px 2px 20px yellow;
+}
+.share{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.music{
+            z-index: 10000;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 39px;
+            height: 39px;
+        }
+.mus_rotate{
+            -webkit-animation: mus_rotate 4s both linear infinite;
+            animation: mus_rotate 4s both linear infinite;
+}
+@-webkit-keyframes mus_rotate {
+            from { -webkit-transform: rotate(0);}
+            to{ -webkit-transform: rotate(360deg); }
+ }
+@keyframes mus_rotate {
+            from { transform: rotate(0);}
+            to{ transform: rotate(360deg); }
+}
+/*背景区*/
+.page-1-1{
+	background: rgb(236,224,54);
+}
+.page-2-1{ 
+	background:url(../img/page2-back.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.page-3-1,.page-7-1,.page-11-1{ 
+	background:url(../img/page3-back.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.page-4-1,.page-8-1,.page-12-1{ 
+	background:url(../img/page4-back.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.page-5-1,.page-9-1,.page-13-1{ 
+	background:url(../img/page5-back.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.page-6-1,.page-10-1{ 
+	background:url(../img/page6-back.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.page-14-1{
+	background:url(../img/page14-back.jpg) no-repeat;
+	background-size: 100% 100%;
+
+}
+.page-15-1{
+	background:url(../img/page15-back.jpg) no-repeat;
+	background-size: 100% 100%;
+
+}
+.page-16-1{
+	background:url(../img/page16-back.jpg) no-repeat;
+	background-size: 100% 100%;
+
+}
+.answer{
+	margin: 10px auto;
+    width: 95%;
+    /*max-width: 280px;*/
+	
+}
+.answer-orange{
+	background:url(../img/answer-orange.png) no-repeat;
+	background-size: 100% 100%;
+}
+.answer-green{
+	background:url(../img/answer-green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.answer-red{
+	background:url(../img/answer-red.png) no-repeat;
+	background-size: 100% 100%;
+}
+.prize_res{
+    background:url(../img/prize_back.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 34%;
+    width: 92%;
+    height: 64%;
+    left: 4%;
+    opacity: 1;
+}
+.no_prize{
+    background:url(../img/fail.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    height: 17%;
+    opacity: 1;
+}
+
+
+/*选中按钮*/
+.box4{
+	height: 25%;
+}
+.box5{
+	height: 20%;
+}
+.box6{
+	height: 16.3%;
+}
+.height15{
+	height: 15%;
+}
+.pay_list_c1,.piaochecked{
+	width: 100%;  
+    display: block;
+    
+}
+.radioclass {
+	width:0;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+.on {
+	background-repeat: no-repeat;
+    background-size: 30px 30px;
+	background-image: url(../img/check.png);
+    background-position: 9% 58%;
+}
+.option{
+	color: black;
+	padding-left: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.on_check {
+	background-repeat: no-repeat;
+    background-size: 30px 30px;
+	background-image: url(../img/check.png);
+    background-position: 9% 58%;
+}
+
+
+
+/*加载页基准位置*/
+.page1-pos{
+	 position: absolute;
+    top: 42%;
+    left: 50%;
+}
+.page1-img1{
+	width: 200px;
+   
+    margin-top: -47px;
+    margin-left: -100px;
+}
+.page1-img2{
+	width: 135px;
+   
+    margin-top: 90px;
+    
+    margin-left: -67px;
+}
+.load-back{
+	background: rgb(150,223,133);
+    width: 200px;
+    height: 26px;
+    margin-left: -100px;
+    margin-top: 47px;
+    text-align: left;
+}
+.loading-back{
+	width:0%;
+
+	height:100%;
+	display: inline-block;
+	background: rgb(97,184,77);
+}
+.loading-num{
+    margin-top: 47px;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: rgb(97,184,77);
+    margin-left: 100px;
+}
+@-webkit-keyframes load {
+        0% { width:0;}
+        5%{width:5%;}
+        10%{width:13%;}
+        33%{width:33%;}
+        55%{width:34%;}
+        70%{width:50%;}
+        79%{width:52%;}
+        95%{width:54%;}
+        100%{width:100%;}
+}
+@keyframes load {
+        0% { width:0;}
+        5%{width:5%;}
+        10%{width:13%;}
+        33%{width:33%;}
+        55%{width:34%;}
+        70%{width:50%;}
+        79%{width:52%;}
+        95%{width:54%;}
+        100%{width:100%;}
+}
+/*第二页开始*/
+.page2-img1{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    
+}
+.page2-img2{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 85%;
+    height: 45%;
+}
+
+.page2-btn{
+	position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 140px;
+    margin-left: -70px;
+    margin-bottom: 20px;
+   
+}
+.fade_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.2);
+}
+.page2-share{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+/*第三页开始*/
+
+.contain_img{
+	width: 95%;
+    /*max-width: 240px;*/
+}
+
+/*下拉框样式美化*/
+.btn-select { 
+	position: relative; 
+	display: inline-block; 
+	width: 100%;
+	height: 17%;
+	
+	font: 14px/20px "Microsoft YaHei"; 
+	color: black; 
+} 
+.btn-select .cur-select { 
+	position: absolute; 
+	display: block; 
+	width: 100%;
+	height: 100%;
+	line-height: 25px; 
+	background:url(../img/sel-back.png) no-repeat;
+	background-size: 100% 100%;
+	text-indent: 3px;
+    text-align: left;
+    
+} 
+.target_text{
+	display: inline-block;
+	width: 85%;
+	height: 100%;
+	overflow:hidden; 
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+}
+.btn-select select { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	opacity: 0; 
+	filter: alpha(opacity: 0;); 
+	font: 14px/20px "Microsoft YaHei"; 
+    color: black;
+    background: rgb(175,214,128);
+} 
+.btn-select select option { 
+	text-indent: 10px; 
+} 
+
+.sel_contain{
+	position: absolute;
+    top: 37%;
+    left: 39%;
+    width: 42%;
+    height:25%;
+}
+
+/*第14页样式*/
+.form_to_prize{
+	position: absolute;
+    top: 67%;
+    left: 31%;
+    width: 38%;
+    height: 8%;
+}
+
+/*第15也样式*/
+
+/*位置基准*/
+.page15-pos_start{
+	position: absolute;
+    top: 13%;
+    left: 0;
+}
+.page15-img1{
+    width: 100%;
+    margin-top: 33%;
+}
+.page15-img2{
+    width: 80%;
+    margin-left: 16%;
+    
+}
+.page15-img3{
+    width: 34%;
+    left: 32%;
+    margin-top: 55%;
+   
+}
+.page15-img4{
+   	width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 8%;
+}
+.page15-footer{
+	position: absolute;
+    right: 5%;
+    bottom: 3%;
+    width: 40%;
+}
+
+/*抽奖页*/
+.page16-button{
+    background: rgb(206,40,52);
+    height: 6%;
+    margin-bottom: 12%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.page16-img2{
+    position: absolute;
+    bottom: 5%;
+    width: 50%;
+    left: 25%;
+}
+.page16-img3{
+	position: absolute;
+    width: 20%;
+    top: 38%;
+    left: 10%;
+}
+.page16-img4{
+	position: absolute;
+    width: 20%;
+    top: 38%;
+    left: 40%;
+}
+.page16-img5{
+	position: absolute;
+    width: 20%;
+    top: 38%;
+    right: 10%;
+}
+.page16-img6{
+	position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 10%;
+}
+.page16-img7{
+	position: absolute;
+    width: 20%;
+    top: 50%;
+    right: 10%;
+}
+.page16-img8{
+	position: absolute;
+    width: 20%;
+    top: 64%;
+    left: 10%;
+}
+.page16-img9{
+	position: absolute;
+    width: 20%;
+    top: 64%;
+    left: 40%;
+}
+.page16-img10{
+	position: absolute;
+    width: 20%;
+    top: 64%;
+    right: 10%;
+}
+.prize_input{
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+    box-sizing: content-box;
+    border-radius: 5px;
+    border: 2px solid rgb(239,197,37);
+    background: rgb(242,242,173);
+    text-align: center;
+    font-size: 2rem;
+}
+.prize_tip{
+    margin-top: 35%;
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+    margin-left: 10%;
+}
+.prize_sub{
+    width: 32%;
+    height: 40px;
+    background: rgb(239,197,37);
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+}
+.no_prize p{
+    color: white;
+    margin-top: 6%;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.no_prize img{
+    width: 30%;
+    margin-top: 3%;
+}
